@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eAgendaV3.PaginaInicial"
+             Title="Pagina Inicial">
+    
+    <!--<ScrollView>
+    
+        <StackLayout> -->
+    <Grid>
+        <!--<BoxView Color="#u0699d" Opacity="0.8"/>-->
+                <Grid>
+                    <Image Grid.Row="0" Source="Icon.png" WidthRequest="60" HeightRequest="60"  Margin="0,50,0,30"/>
+                    <ScrollView Orientation="Horizontal" HorizontalOptions="FillAndExpand" Grid.Row="1" Padding="30,20">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="JOGOS"  HorizontalOptions="Center" TextColor="White" />
+                            <Image Grid.Row="0" Source="Css.png" WidthRequest="45" HeightRequest="45"  />
+                            <Image Grid.Row="0" Source="Dota.png" WidthRequest="45" HeightRequest="45"  />
+                            <Image Grid.Row="0" Source="HearthStone.png" WidthRequest="45" HeightRequest="45"  />
+                            <Image Grid.Row="0" Source="LeagueOfL.png" WidthRequest="45" HeightRequest="45"  />
+                            <Image Grid.Row="0" Source="Smite.png" WidthRequest="45" HeightRequest="45"  />
+                            <Image Grid.Row="0" Source="Starcraft2.png" WidthRequest="45" HeightRequest="45"  />
+                        </StackLayout>
+                    </ScrollView>
+                    <ScrollView Orientation="Horizontal" HorizontalOptions="FillAndExpand"  Grid.Row="2" Margin="0,0,0,50">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="TIMES" TextColor="White" HorizontalOptions="Center"/>
+                            <Image Grid.Row="0" Source="Keyd.png" WidthRequest="45" HeightRequest="45"  />
+                            <Image Grid.Row="0" Source="Pain.png" WidthRequest="45" HeightRequest="45"  />
+                            <Image Grid.Row="0" Source="Programming.png" WidthRequest="45" HeightRequest="45"  />
+                            <Image Grid.Row="0" Source="face.png" WidthRequest="45" HeightRequest="45"  />
+                            <Image Grid.Row="0" Source="RedCanids.png" WidthRequest="45" HeightRequest="45"  />
+                            <Image Grid.Row="0" Source="Intz.png" WidthRequest="45" HeightRequest="45"  />
+                            <Image Grid.Row="0" Source="Programming.png" WidthRequest="45" HeightRequest="45"  />
+                        </StackLayout>
+
+                    </ScrollView>
+                </Grid>
+             </Grid>
+        <!-- </StackLayout>
+    </ScrollView>-->
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eAgendaV3.Perfil"
+             Title="Perfil">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Image Source="@drawable/back.jpeg" Aspect="AspectFill"/>
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" x:Name="IconPerfil" Source="@drawable/Icon.png" WidthRequest="100" HeightRequest="100"  Margin="0,50,0,30" />
+
+                    <Button Text="Selecionar Image" TextColor="White" BackgroundColor="Transparent" Clicked="Handle_Clicked" />
+                    
+                    <StackLayout Grid.Row="1" Padding="30,20">
+                        <Label Text="Nome: " TextColor="White" />
+                        <Label Text="Idade: " TextColor="White" />
+                        <Label Text="Email: " TextColor="White" />
+                        <Label Text="Login: " TextColor="White" />
+                        <Label Text="Senha: " TextColor="White" />
+                        <Label Text="Sobre:" LineBreakMode="WordWrap" TextColor="White"/>
+
+                        <Button Text="Alterar" BackgroundColor="White" BorderRadius="20" TextColor="Black"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2"  HorizontalOptions="Center" Margin="0,0,0,50">
+                        <Label Text="Preferências:"  HorizontalOptions="Center"/>
+
+                    </StackLayout>
+                </Grid>
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

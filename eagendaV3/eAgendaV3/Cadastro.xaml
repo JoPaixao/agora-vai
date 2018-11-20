@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="eAgendaV3.Cadastro">
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid>
+                <Image Source="@drawable/back.jpeg" Aspect="AspectFill"/>
+                <BoxView Color="#u0699d" Opacity="0.8"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Image Grid.Row="0" Source="@drawable/Icon.png" WidthRequest="100" HeightRequest="100"  Margin="0,50,0,30"/>
+
+                    <StackLayout Grid.Row="1" Padding="30,20">
+                        <Entry x:Name="NomeEntry" Placeholder="Nome" PlaceholderColor="White"/>
+                        <Entry x:Name="IdadeEntry" Placeholder="Idade" PlaceholderColor="White"  />
+                        <Entry x:Name="EmailEntry"  Placeholder="Email" PlaceholderColor="White" Keyboard="Email" />
+                        <Entry x:Name="LoginEntry" Placeholder="Login" PlaceholderColor="White" />
+                        <Entry x:Name="SenhaEntry" Placeholder="Senha" PlaceholderColor="White" IsPassword="True" />
+                        <Entry Placeholder="Confirmar Senha" PlaceholderColor="White" IsPassword="True" />
+                        <Button Text="Cadastrar-se" BackgroundColor="White" BorderRadius="20" TextColor="Black" Clicked="Button_Clicked"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2"  HorizontalOptions="Center" Margin="0,0,0,50">
+                        <Label Text="Cadastrar-se com"  HorizontalOptions="Center"/>
+                        <StackLayout Orientation="Horizontal" >
+                            <Image Grid.Row="0" Source="@drawable/face.png" WidthRequest="45" HeightRequest="45"  />
+                            <Image Grid.Row="0" Source="@drawable/gmail.png" WidthRequest="45" HeightRequest="45"  />
+                            <Image Grid.Row="0" Source="@drawable/instagram.png" WidthRequest="45" HeightRequest="45"  />
+
+                        </StackLayout>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
